@@ -38,9 +38,9 @@ class Item
 end
 
 
-item1 = Item.new(name: "glasses", color: "tan", price: 5000, stock: 39)
-item2 = Item.new(name: "headphones", color: "ruby red", price: 450, stock: 3)
-item3 = Item.new(name: "cars", color: "silver", price: 50, stock: 1)
+item1 = Item.new(name: "livers", color: "tan", price: 5000, stock: 39)
+item2 = Item.new(name: "kidneys", color: "ruby red", price: 450, stock: 3)
+item3 = Item.new(name: "tongues", color: "silver", price: 50, stock: 1)
 
 item1.description
 item1.buy
