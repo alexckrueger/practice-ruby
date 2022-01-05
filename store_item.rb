@@ -17,6 +17,9 @@
 
 class Item
 
+  attr_reader :name, :color
+  attr_accessor :price, :stock
+
   def initialize(input_name, input_color, input_price, input_stock)
     @name = input_name
     @color = input_color
@@ -28,32 +31,8 @@ class Item
     puts "We have #{color} #{name} for sale for only $#{price}! Only #{stock} left in stock!"
   end
 
-  def name
-    @name
-  end
-
-  def color
-    @color
-  end
-
-  def price
-    @price
-  end
-
-  def stock
-    @stock
-  end
-
   def buy
     @stock = @stock - 1
-  end
-  
-  def price=(input_price)
-    @price = input_price
-  end
-
-  def stock=(input_stock)
-    @stock = input_stock
   end
 
 end
