@@ -20,11 +20,11 @@ class Item
   attr_reader :name, :color
   attr_accessor :price, :stock
 
-  def initialize(input_name, input_color, input_price, input_stock)
-    @name = input_name
-    @color = input_color
-    @price = input_price
-    @stock = input_stock
+  def initialize(options_hash)
+    @name = options_hash[:name]
+    @color = options_hash[:color]
+    @price = options_hash[:price]
+    @stock = options_hash[:stock]
   end
 
   def description
@@ -38,9 +38,9 @@ class Item
 end
 
 
-item1 = Item.new("glasses", "tan", 5000, 39)
-item2 = Item.new("headphones", "ruby red", 450, 3)
-item3 = Item.new("cars", "silver", 50, 1)
+item1 = Item.new(name: "glasses", color: "tan", price: 5000, stock: 39)
+item2 = Item.new(name: "headphones", color: "ruby red", price: 450, stock: 3)
+item3 = Item.new(name: "cars", color: "silver", price: 50, stock: 1)
 
 item1.description
 item1.buy
