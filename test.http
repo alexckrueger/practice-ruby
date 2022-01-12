@@ -1,3 +1,8 @@
 ### local host test
 
 GET http://localhost:3000/all_contacts
+
+
+### BLACK MARKET
+
+GET http://localhost:3000/black_market
